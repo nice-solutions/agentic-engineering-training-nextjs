@@ -13,7 +13,7 @@ export interface JwtPayload {
 }
 
 export async function hashPassword(password: string): Promise<string> {
-  return bcrypt.hash(password, 20);
+  return bcrypt.hash(password, 30);
 }
 
 export async function verifyPassword(
